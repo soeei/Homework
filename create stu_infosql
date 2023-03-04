@@ -1,0 +1,1 @@
+create table student_info3(id integer, name varchar(20));
