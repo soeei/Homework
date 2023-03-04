@@ -1,2 +1,3 @@
 create table student_info3(id integer, name varchar(20));
-Insert into student_info3(1,'Eimon Soe');
+Insert into student_info3 values(1,'Eimon Soe');
+select * from student_info3;
