@@ -1,0 +1,1 @@
+create table sinfo(sid number,sname varchar(30));
