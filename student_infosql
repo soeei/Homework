@@ -1,3 +1,4 @@
 create table sinfo(sid number,sname varchar(30));
 insert into sinfo values(1,'Moe Thet htoo');
+insert into sinfo values(2,'Eimon Soe');
 select * from sinfo;
