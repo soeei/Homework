@@ -1,0 +1,30 @@
+create table hwst(no1 number,no2 number(3),no3 number(6,2),no4 number(6,1),no5 number(4,2),no6 number(6,-2));
+alter table hwst add no7 number(2,-2);
+insert into hwst (no1) values(123.89);
+insert into hwst (no2) values(123.89);
+insert into hwst (no3) values(123.89);
+insert into hwst (no4) values(123.89);
+insert into hwst (no5) values(123.89);
+insert into hwst (no6) values(123.89);
+insert into hwst(no6) values(12389);
+insert into hwst(no3) values(1238.90);
+insert into hwst(no3) values(1238.9);
+insert into hwst(no3) values(1000.00);
+insert into hwst(no7) values(12389);
+select * from hwst;
+alter table hwst modify  no5 number(4,5);
+alter table hwst modify no2 number(5);
+alter table hwst modify no1 char(5);
+alter table hwst rename column no1 to Number_1;
+alter table hwst drop column no7;
+
+create table hwst1(no1 number(4,5),no2 number(2,7),no3 number(2,5));
+insert into hwst1(no1) values(.01234);
+insert into hwst1(no1) values(1.00);
+insert into hwst1(no1) values(.000127);
+select * from hwst1;
+insert into hwst1(no2) values(.0000012);
+insert into hwst1(no2) values(.00000125);
+insert into hwst1(no3) values(1.2e-4);
+insert into hwst1(no3) values(1.2e-5);
+
